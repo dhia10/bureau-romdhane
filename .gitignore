@@ -1,0 +1,18 @@
+# Ignorer les fichiers multimédias WhatsApp bruts et inutilisés
+WhatsApp*
+*.mp4
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de déploiement obsolètes
+staticwebapp.config.json
+deploy-azure.ps1
+deploy-cdn.ps1
+deploy-storage.ps1
+deploy-vm.ps1
+fix-https.ps1
+setup-https-cdn.ps1
+DEPLOY-ALL.ps1
+push-changes.ps1

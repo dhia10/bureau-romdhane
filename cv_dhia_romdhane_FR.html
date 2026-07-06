@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Dhia Romdhane – CV Français</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #c8cdd4;
+  color: #1a1a2e;
+  font-size: 13px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+.page {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  background: white;
+  display: grid;
+  grid-template-columns: 68mm 1fr;
+  box-shadow: 0 6px 40px rgba(0,0,0,0.22);
+  flex-shrink: 0;
+}
+.sidebar {
+  background: #16082e;
+  color: #dde6f5;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  overflow: hidden;
+}
+.photo-wrap { display:flex; justify-content:center; }
+.photo-circle {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px solid #8b5cf6;
+  overflow: hidden;
+  background: #2d1260;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #8b5cf6;
+}
+.photo-circle img { width:100%; height:100%; object-fit:cover; object-position: center top; }
+.name-block {
+  text-align: center;
+  border-bottom: 1px solid #2a1650;
+  padding-bottom: 10px;
+  margin-top: 8px;
+}
+.name-block h1 { font-size:16px; font-weight:700; color:#fff; line-height:1.2; }
+.name-block .subtitle {
+  font-size: 8.5px;
+  color: #8b5cf6;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  margin-top: 4px;
+}
+.s-section h3 {
+  font-size: 8.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8b5cf6;
+  border-bottom: 1px solid #2a1650;
+  padding-bottom: 3px;
+  margin-bottom: 7px;
+}
+.c-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  color: #c5b5e8;
+}
+.c-item .ic { color:#8b5cf6; font-size:10px; flex-shrink:0; width:13px; }
+.c-item a { color:#c5b5e8; text-decoration:none; }
+.skill-cat { margin-bottom:8px; }
+.skill-cat-label {
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a78bde;
+  margin-bottom: 4px;
+}
+.stag {
+  display: inline-block;
+  background: #22104a;
+  color: #c5b5e8;
+  font-size: 8.5px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin: 1px 2px 1px 0;
+  border: 1px solid #33205a;
+}
+.stag.hot {
+  background: #2e1870;
+  color: #c4b5fd;
+  border-color: #4c2f90;
+}
+.lang-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 10px;
+  color: #c5b5e8;
+}
+.lang-level {
+  font-size: 8.5px;
+  color: #8b5cf6;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.main { padding: 22px 22px; display:flex; flex-direction:column; gap:11px; overflow:hidden; }
+.section h2 {
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #16082e;
+  border-bottom: 2px solid #8b5cf6;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+.summary-p { font-size:11px; color:#374151; line-height:1.55; }
+.exp-item { margin-bottom:9px; }
+.exp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1px;
+}
+.exp-role { font-size:11.5px; font-weight:600; color:#16082e; }
+.exp-date { font-size:9.5px; color:#8b5cf6; font-weight:600; white-space:nowrap; }
+.exp-org { font-size:10px; color:#8b5cf6; font-weight:500; margin-bottom:3px; }
+.bullets { padding-left:12px; color:#4b5563; font-size:10px; }
+.bullets li { margin-bottom:1px; line-height:1.45; }
+.proj-item {
+  margin-bottom:8px;
+  padding-left:9px;
+  border-left: 2px solid #8b5cf6;
+}
+.proj-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom:1px;
+}
+.proj-name { font-size:11px; font-weight:600; color:#16082e; }
+.badge {
+  font-size: 8px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badge.done { background:#ede9fe; color:#5b21b6; }
+.badge.sold { background:#dcfce7; color:#166534; }
+.proj-desc { font-size:10px; color:#4b5563; line-height:1.45; margin-top:2px; }
+.tech-row { display:flex; flex-wrap:wrap; gap:2px; margin-top:3px; }
+.tech { font-size:8.5px; background:#f5f3ff; color:#5b21b6; padding:1px 4px; border-radius:3px; border:1px solid #ede9fe; }
+.edu-item { margin-bottom:7px; }
+.edu-school { font-size:11.5px; font-weight:600; color:#16082e; }
+.edu-deg { font-size:10px; color:#8b5cf6; font-weight:500; }
+.edu-focus { font-size:9.5px; color:#6b7280; margin-top:1px; }
+.cert-item { display:flex; align-items:flex-start; gap:6px; margin-bottom:4px; }
+.cert-dot { width:5px; height:5px; border-radius:50%; background:#8b5cf6; margin-top:4px; flex-shrink:0; }
+.cert-dot.done { background:#16a34a; }
+.cert-text { font-size:10px; color:#374151; line-height:1.35; }
+.cert-sub { font-size:9px; color:#9ca3af; }
+@page { margin: 0; size: A4; }
+@media print { body{background:white; padding:0; min-height:unset;} .page{box-shadow:none; margin:0;} }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="sidebar">
+  <div>
+    <div class="photo-wrap">
+      <div class="photo-circle">
+        <img src="photo_dhia.jpg" alt="Dhia Romdhane"
+             onerror="this.parentElement.innerHTML='DR'">
+      </div>
+    </div>
+    <div class="name-block">
+      <h1>Dhia Romdhane</h1>
+      <div class="subtitle">Ingénieur IA / Data Science</div>
+    </div>
+  </div>
+
+  <div class="s-section">
+    <h3>Contact</h3>
+    <div class="c-item"><span class="ic">&#9993;</span><span>dhia.romdhane@esprit.tn</span></div>
+    <div class="c-item"><span class="ic">&#9990;</span><span>+216 53 192 623</span></div>
+    <div class="c-item"><span class="ic">&#9679;</span><span>Sousse, Tunisie</span></div>
+    <div class="c-item"><span class="ic">&#9670;</span><a href="https://github.com/dhia10">github.com/dhia10</a></div>
+  </div>
+
+  <div class="s-section">
+    <h3>Compétences</h3>
+    <div class="skill-cat">
+      <div class="skill-cat-label">IA &amp; Computer Vision</div>
+      <span class="stag hot">Computer Vision</span>
+      <span class="stag hot">Systèmes RAG</span>
+      <span class="stag hot">LLMs &amp; Agents IA</span>
+      <span class="stag">Deep Learning</span>
+      <span class="stag">Machine Learning</span>
+      <span class="stag">NLP</span>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-label">Données &amp; Recherche</div>
+      <span class="stag">Azure AI Search</span>
+      <span class="stag">Recherche vectorielle</span>
+      <span class="stag">Séries temporelles</span>
+      <span class="stag">Prédiction de prix</span>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-label">Développement</div>
+      <span class="stag">Python</span>
+      <span class="stag">Next.js</span>
+      <span class="stag">Full-Stack</span>
+      <span class="stag">Docker</span>
+      <span class="stag">APIs REST</span>
+      <span class="stag">Cloud</span>
+      <span class="stag">Symfony</span>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-label">Autre</div>
+      <span class="stag">Web Scraping</span>
+      <span class="stag">CCNA</span>
+      <span class="stag">Cybersécurité</span>
+      <span class="stag">Automatisation</span>
+    </div>
+  </div>
+
+  <div class="s-section">
+    <h3>Langues</h3>
+    <div class="lang-row"><span>Arabe</span><span class="lang-level">Natif</span></div>
+    <div class="lang-row"><span>Français</span><span class="lang-level">Courant</span></div>
+    <div class="lang-row"><span>Anglais</span><span class="lang-level">Courant</span></div>
+  </div>
+
+  <div class="s-section">
+    <h3>Profil</h3>
+    <div class="c-item" style="font-size:11px;">
+      <span class="ic">&#9670;</span>
+      <span>3ème année — Ingénierie Data Science, ESPRIT</span>
+    </div>
+    <div class="c-item" style="font-size:11px; margin-top:2px;">
+      <span class="ic">&#9670;</span>
+      <span>Programme Erasmus+</span>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="section">
+    <h2>Résumé Professionnel</h2>
+    <p class="summary-p">
+      Étudiant en ingénierie Data Science à ESPRIT avec une expertise solide en Computer Vision, systèmes RAG, LLMs et Agents IA. Expérimenté dans la conception d'applications IA complètes — des plateformes d'intelligence immobilière aux outils d'automatisation commercialisés. Développeur full-stack avec un esprit produit, capable de concevoir, construire et livrer des systèmes complets de façon autonome.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Expérience</h2>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div class="exp-role">Développeur Full-Stack</div>
+        <div class="exp-date">2025 – Présent</div>
+      </div>
+      <div class="exp-org">ProjectLib Ecosystem</div>
+      <ul class="bullets">
+        <li>Développement d'une plateforme multi-produits intégrant des systèmes de marketplace, des flux de paiement et des modules connectés.</li>
+        <li>Conception de services backend évolutifs et interfaces frontend avec Next.js et APIs Python pour l'IA.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div class="exp-role">Fondateur &amp; Développeur Principal</div>
+        <div class="exp-date">2024</div>
+      </div>
+      <div class="exp-org">RIDTech Agency</div>
+      <ul class="bullets">
+        <li>Création et vente d'outils d'automatisation commerciaux : extracteur de données TikTok Live et application de scraping Facebook.</li>
+        <li>Livraison de solutions web full-stack et systèmes d'automatisation personnalisés à des clients multi-secteurs.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <div class="exp-role">Stagiaire Data Science (PFE)</div>
+        <div class="exp-date">2022 – 2023</div>
+      </div>
+      <div class="exp-org">Clevertech</div>
+      <ul class="bullets">
+        <li>Développement de modèles ML en séries temporelles pour prédire les types et fréquences de crimes en France, de la préparation des données à l'évaluation des modèles.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Projets</h2>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <div class="proj-name">EstateMind — Plateforme IA Immobilière</div>
+        <span class="badge done">2026 · Réalisé</span>
+      </div>
+      <div class="proj-desc" style="margin-bottom:2px;"><span style="font-size:10px;color:#8b5cf6;font-weight:600;">Value</span></div>
+      <div class="proj-desc">Plateforme multi-services IA pour le marché immobilier tunisien : prédiction ML des prix, scoring d'investissement, recommandation géographique, RAG juridique, analyse prédictive, visualisation 3D et analyse de compatibilité. Architecture microservices cloud-ready avec frontend Next.js.</div>
+      <div class="tech-row">
+        <span class="tech">Python</span><span class="tech">IA/ML</span><span class="tech">RAG</span>
+        <span class="tech">Next.js</span><span class="tech">Docker</span>
+        <span class="tech">Cloud</span><span class="tech">APIs REST</span>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <div class="proj-name">Système IA de Tri des Déchets</div>
+        <span class="badge done">Réalisé</span>
+      </div>
+      <div class="proj-desc">Computer Vision pour la détection et classification en temps réel de déchets plastiques, papier et organiques. Projet alliant IA, IoT et électronique — ODD 6 &amp; 14.</div>
+      <div class="tech-row">
+        <span class="tech">Python</span><span class="tech">Computer Vision</span><span class="tech">IoT</span>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <div class="proj-name">Analyseur Volume &amp; Coût Impression 3D</div>
+        <span class="badge done">Réalisé</span>
+      </div>
+      <div class="proj-desc">Visionneuse STL avancée avec estimation de volume, calcul du poids et modélisation des coûts — rétro-ingénierie de la logique de support OrcaSlicer.</div>
+      <div class="tech-row">
+        <span class="tech">Python</span><span class="tech">Analyse 3D</span><span class="tech">STL</span>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <div class="proj-name">Extracteur de Données TikTok Live</div>
+        <span class="badge sold">Vendu</span>
+      </div>
+      <div class="proj-desc">Outil en temps réel pour lire les commentaires TikTok Live, extraire et dédupliquer des contacts, et exporter vers Google Sheets — vendu commercialement via RIDTech.</div>
+      <div class="tech-row">
+        <span class="tech">Python</span><span class="tech">Scraping en temps réel</span><span class="tech">Google Sheets API</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+    <div class="section">
+      <h2>Formation</h2>
+      <div class="edu-item">
+        <div class="edu-school">ESPRIT</div>
+        <div class="edu-deg">Ingénierie Data Science</div>
+        <div class="edu-focus">ML · Deep Learning · Systèmes IA</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-school">ISSAT Sousse</div>
+        <div class="edu-deg">Licence en Informatique</div>
+        <div class="edu-focus">Génie Logiciel · Web · SGBD</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <div class="cert-item"><div class="cert-dot done"></div><div class="cert-text">Building RAG Agents with LLMs<div class="cert-sub">NVIDIA · 2024</div></div></div>
+      <div class="cert-item"><div class="cert-dot done"></div><div class="cert-text">OCI 2025 AI Foundations Associate<div class="cert-sub">Oracle · 2025</div></div></div>
+      <div class="cert-item"><div class="cert-dot done"></div><div class="cert-text">Cisco CCNA<div class="cert-sub">Cisco · 2023</div></div></div>
+      <div class="cert-item"><div class="cert-dot done"></div><div class="cert-text">ML Process &amp; Algorithmes A–Z<div class="cert-sub">365 Data Science · 2023</div></div></div>
+      <div class="cert-item"><div class="cert-dot done"></div><div class="c

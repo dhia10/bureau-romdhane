@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bureau d'Étude Romdhane – Ingénierie Génie Civil | Tunisie</title>
+  <meta name="description" content="Groupe d'ingénieurs experts en génie civil en Tunisie. Études, expertise structurelle, pilotage, métré, formation, approbation et BIM. AutoCAD, Revit, Robot Structure, Tekla." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ── LOADER ── -->
+<div id="loader">
+  <div class="loader-inner">
+    <img src="logo.svg" alt="B.E. Romdhane" class="loader-logo-img" />
+    <div class="loader-bar"><span></span></div>
+    <p>Chargement en cours…</p>
+  </div>
+</div>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="logo">
+      <img src="logo.svg" alt="B.E. Romdhane" class="logo-img" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"    class="nav-link">À Propos</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#software" class="nav-link">Logiciels</a></li>
+      <li><a href="#projects" class="nav-link">Réalisations</a></li>
+      <li><a href="#formation" class="nav-link">Formation</a></li>
+      <li><a href="https://wa.me/21696300558?text=Bonjour%20Bureau%20d%27%C3%89tude%20Romdhane%20%F0%9F%91%8B%0A%0AJe%20souhaite%20demander%20un%20devis%20pour%20mon%20projet." target="_blank" rel="noopener" class="nav-link nav-cta">Demander un Devis</a></li>
+    </ul>
+    <button class="mobile-menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero" class="hero">
+  <canvas id="particles"></canvas>
+  <div class="hero-bg" style="background-image:url('assets/hero_bg.png')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <i class="fa-solid fa-shield-halved"></i>&nbsp; Groupe d'Ingénieurs — Tunisie &amp; International
+    </div>
+    <h1 class="hero-title reveal">
+      Façonnons <span class="gradient-text">l'Infrastructure</span><br/>de Demain
+    </h1>
+    <p class="hero-subtitle reveal">
+      Expertise pluridisciplinaire en génie civil industriel. De la conception BIM au pilotage de chantier,
+      nous transformons vos projets en réalisations d'excellence.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="https://wa.me/21696300558?text=Bonjour%20Bureau%20d%27%C3%89tude%20Romdhane%20%F0%9F%91%8B%0A%0AJe%20souhaite%20demander%20un%20devis%20pour%20mon%20projet." target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Demander un Devis</a>
+      <a href="#projects" class="btn btn-ghost"><i class="fa-solid fa-images"></i> Voir Nos Réalisations</a>
+    </div>
+    <div class="hero-scroll reveal">
+      <span>Défiler</span>
+      <div class="scroll-line"><span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section id="stats" class="stats-section">
+  <div class="container stats-grid">
+
+    <div class="stat-card reveal">
+      <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+      <div class="stat-value-row">
+        <h3 class="stat-number" data-target="12">0</h3>
+        <span class="stat-plus">+</span>
+      </div>
+      <span class="stat-unit">ans</span>
+      <p class="stat-label">d'Expérience</p>
+    </div>
+
+    <div class="stat-card reveal">
+      <div class="stat-icon"><i class="fa-solid fa-building"></i></div>
+      <div class="stat-value-row">
+        <h3 class="stat-number" data-target="150">0</h3>
+        <span class="stat-plus">+</span>
+      </div>
+      <span class="stat-unit">&nbsp;</span>
+      <p class="stat-label">Projets Réalisés</p>
+    </div>
+
+    <div class="stat-card reveal">
+      <div class="stat-icon"><i class="fa-solid fa-hard-hat"></i></div>
+      <div class="stat-value-row">
+        <h3 class="stat-number" data-target="20">0</h3>
+        <span class="stat-plus">+</span>
+      </div>
+      <span class="stat-unit">&nbsp;</span>
+      <p class="stat-label">Ingénieurs &amp; Experts</p>
+    </div>
+
+    <div class="stat-card reveal">
+      <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+      <div class="stat-value-row">
+        <h3 class="stat-number" data-target="7">0</h3>
+        <span class="stat-plus">&nbsp;</span>
+      </div>
+      <span class="stat-unit">&nbsp;</span>
+      <p class="stat-label">Pays d'Intervention</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="about-section">
+  <div class="container about-grid">
+    <div class="about-images reveal">
+      <div class="img-stack">
+        <img src="projects/img-01.jpg" alt="Projet industriel Tunisie" class="img-main" />
+        <img src="projects/img-05.jpg" alt="Structure métallique" class="img-secondary" />
+        <div class="img-badge">
+          <i class="fa-solid fa-award"></i>
+          <span>Excellence<br/>Technique</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-tag">Qui Sommes-Nous</div>
+      <h2 class="section-title">Un Groupe d'Ingénieurs<br/><span class="gradient-text">Passionnés par l'Excellence</span></h2>
+      <p>Fondé par <strong>Hamdi Romdhane</strong>, notre bureau regroupe une équipe pluridisciplinaire d'ingénieurs spécialisés en génie civil et structures industrielles, intervenant en Tunisie et à l'international sur des projets à fort enjeu technique.</p>
+      <p>Notre force réside dans notre capacité à couvrir l'intégralité du cycle de vie d'un projet : de la phase d'étude et de conception jusqu'à la réception des travaux, en passant par le pilotage et le contrôle qualité.</p>
+      <div class="about-highlights">
+        <div class="highlight"><i class="fa-solid fa-check-circle"></i><span>Projets industriels, bâtiments &amp; infrastructures</span></div>
+        <div class="highlight"><i class="fa-solid fa-check-circle"></i><span>Maîtrise complète du BIM (Revit, Tekla, AutoCAD)</span></div>
+        <div class="highlight"><i class="fa-solid fa-check-circle"></i><span>Respect des normes tunisiennes &amp; européennes (EC)</span></div>
+        <div class="highlight"><i class="fa-solid fa-check-circle"></i><span>Approche sur mesure et accompagnement personnalisé</span></div>
+      </div>
+      <a href="#contact" class="btn btn-primary mt-2">Travaillons Ensemble <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Nos Domaines d'Activité</div>
+      <h2 class="section-title">Une Expertise <span class="gradient-text">360°</span></h2>
+      <p class="section-desc">De l'étude structurelle à l'approbation réglementaire, nous prenons en charge chaque dimension de votre projet.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon icon-blue"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <h3>Expertise Technique</h3>
+        <p>Diagnostic structurel, évaluation de résistance, expertise des ouvrages existants et recommandations d'intervention.</p>
+        <ul class="service-list">
+          <li>Expertise post-sinistre</li>
+          <li>Audit de structures existantes</li>
+          <li>Rapports d'expertise certifiés</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon icon-orange"><i class="fa-solid fa-pencil-ruler"></i></div>
+        <h3>Études &amp; Conception</h3>
+        <p>Conception structurelle complète, calculs aux états limites selon Eurocode, plans d'exécution et notes de calcul.</p>
+        <ul class="service-list">
+          <li>Béton armé &amp; précontraint</li>
+          <li>Charpente métallique</li>
+          <li>Fondations &amp; soutènements</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon icon-green"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <h3>Formation Professionnelle</h3>
+        <p>Programmes sur mesure pour maîtriser les outils et normes du génie civil, dispensés par des ingénieurs praticiens.</p>
+        <ul class="service-list">
+          <li>Formation AutoCAD / Revit / Tekla</li>
+          <li>Normes Eurocode appliquées</li>
+          <li>BIM management</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon icon-blue"><i class="fa-solid fa-person-digging"></i></div>
+        <h3>Pilotage de Chantier</h3>
+        <p>Coordination des travaux, interface entre maîtrise d'ouvrage et entreprises, maîtrise des délais et des coûts.</p>
+        <ul class="service-list">
+          <li>OPC – Ordonnancement &amp; Pilotage</li>
+          <li>Direction des travaux</li>
+          <li>Réunions de chantier &amp; PV</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon icon-orange"><i class="fa-solid fa-ruler-combined"></i></div>
+        <h3>Métré &amp; Quantitatif</h3>
+        <p>Devis quantitatifs et estimatifs précis, bordereaux des prix et décomposition des ouvrages pour appels d'offres.</p>
+        <ul class="service-list">
+          <li>DPGF – Décomposition du prix global</li>
+          <li>BPU – Bordereau des prix unitaires</li>
+          <li>Attachements &amp; situations travaux</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon icon-green"><i class="fa-solid fa-coins"></i></div>
+        <h3>Coût Projet</h3>
+        <p>Analyse économique, estimation budgétaire préliminaire, optimisation des coûts et études de faisabilité financière.</p>
+        <ul class="service-list">
+          <li>Avant-métrés &amp; estimations</li>
+          <li>Analyse des variantes</li>
+          <li>Optimisation valeur / coût</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon icon-blue"><i class="fa-solid fa-stamp"></i></div>
+        <h3>Approbation &amp; Conformité</h3>
+        <p>Préparation et suivi des dossiers auprès des organismes de contrôle et des autorités tunisiennes compétentes.</p>
+        <ul class="service-list">
+          <li>Dossiers CCCTH / OAT</li>
+          <li>Permis de bâtir &amp; conformité</li>
+          <li>Certification ISO &amp; réglementaire</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="service-card reveal card-featured">
+        <span class="badge-featured">BIM Ready</span>
+        <div class="service-icon icon-orange"><i class="fa-solid fa-cube"></i></div>
+        <h3>BIM &amp; Modélisation 3D</h3>
+        <p>Maquette numérique intégrée pour une coordination multidisciplinaire optimale et visualisation haute fidélité.</p>
+        <ul class="service-list">
+          <li>LOD 300 → LOD 500</li>
+          <li>Coordination MEP / Structure</li>
+          <li>Rendu &amp; animation 3D</li>
+        </ul>
+        <div class="card-glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SOFTWARE ── -->
+<section id="software" class="software-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Outils &amp; Technologies</div>
+      <h2 class="section-title">Logiciels <span class="gradient-text">Maîtrisés</span></h2>
+      <p class="section-desc">Notre équipe opère avec les solutions les plus avancées de l'ingénierie civile numérique.</p>
+    </div>
+    <div class="software-grid">
+
+      <div class="sw-card reveal">
+        <div class="sw-logo-box sw-autocad">
+          <span>AC</span>
+        </div>
+        <div class="sw-info">
+          <h4>AutoCAD</h4>
+          <p>Plans 2D, détails constructifs, mise en plan technique tous corps d'état.</p>
+          <div class="sw-tags">
+            <span>2D Drafting</span><span>Détails Exécution</span><span>VRD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sw-card reveal">
+        <div class="sw-logo-box sw-revit">
+          <span>RVT</span>
+        </div>
+        <div class="sw-info">
+          <h4>Autodesk Revit</h4>
+          <p>Maquette BIM complète, modélisation structurelle &amp; architecturale, coordination.</p>
+          <div class="sw-tags">
+            <span>BIM</span><span>LOD 500</span><span>Familles</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sw-card reveal">
+        <div class="sw-logo-box sw-robot">
+          <span>RSA</span>
+        </div>
+        <div class="sw-info">
+          <h4>Robot Structural Analysis</h4>
+          <p>Calcul EF, analyse dynamique, dimensionnement BA &amp; acier selon Eurocode.</p>
+          <div class="sw-tags">
+            <span>FEM</span><span>Eurocode</span><span>Séisme</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sw-card reveal">
+        <div class="sw-logo-box sw-tekla">
+          <span>TKL</span>
+        </div>
+        <div class="sw-info">
+          <h4>Tekla Structures</h4>
+          <p>Modélisation détaillée acier &amp; béton, fabrication numérique, plans d'ateliers.</p>
+          <div class="sw-tags">
+            <span>Shop Drawings</span><span>Préfab</span><span>Acier</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sw-card reveal">
+        <div class="sw-logo-box sw-civil">
+          <span>C3D</span>
+        </div>
+        <div class="sw-info">
+          <h4>Civil 3D</h4>
+          <p>VRD, terrassements, profils en long/travers, réseaux et modélisation terrain.</p>
+          <div class="sw-tags">
+            <span>Voirie</span><span>Profils</span><span>Topographie</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sw-card reveal">
+        <div class="sw-logo-box sw-safe">
+          <span>SAF</span>
+        </div>
+        <div class="sw-info">
+          <h4>SAFE / ETABS</h4>
+          <p>Planchers, radiers, dalles et analyse sismique de bâtiments courants &amp; IGH.</p>
+          <div class="sw-tags">
+            <span>Planchers</span><span>Radiers</span><span>Sismique</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS CAROUSEL ── -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Nos Réalisations</div>
+      <h2 class="section-title">Projets <span class="gradient-text">Industriels &amp; Bâtimentaires</span></h2>
+      <p class="section-desc">Un portfolio de réalisations concrètes en Tunisie et à l'international — usines, entrepôts, bâtiments et ouvrages d'art.</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-tabs reveal">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="industriel">Industriel</button>
+      <button class="filter-btn" data-filter="structure">Structure</button>
+      <button class="filter-btn" data-filter="batiment">Bâtiment</button>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel-wrapper reveal">
+      <button class="car-btn car-prev" id="carPrev" aria-label="Précédent">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="carousel-track-outer">
+        <div class="carousel-track" id="carTrack">
+          <!-- injected by JS -->
+        </div>
+      </div>
+      <button class="car-btn car-next" id="carNext" aria-label="Suivant">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Dots -->
+    <div class="carousel-dots" id="carDots"></div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-prev"  id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lb-next"  id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lb-content">
+      <img src="" alt="" id="lbImg" />
+      <div class="lb-caption">
+        <span id="lbTitle"></span>
+        <small id="lbCounter"></small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FORMATION ── -->
+<section id="formation" class="formation-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Formation &amp; Développement</div>
+      <h2 class="section-title">Programmes <span class="gradient-text">Sur Mesure</span></h2>
+      <p class="section-desc">Investissez dans les compétences de vos équipes avec nos programmes certifiants dispensés par des ingénieurs praticiens.</p>
+    </div>
+    <div class="formation-grid">
+      <div class="formation-card reveal">
+        <div class="form-num">01</div>
+        <div class="form-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Formation BIM &amp; CAO</h3>
+        <p>Maîtrisez AutoCAD, Revit et Tekla Structures de zéro à expert. Ateliers pratiques sur projets réels.</p>
+        <div class="form-tags"><span>AutoCAD</span><span>Revit</span><span>Tekla</span></div>
+        <a href="#contact" class="form-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="formation-card reveal">
+        <div class="form-num">02</div>
+        <div class="form-icon"><i class="fa-solid fa-calculator"></i></div>
+        <h3>Calcul de Structures</h3>
+        <p>Applications pratiques des Eurocodes sur béton armé, charpente métallique et fondations avec Robot Structural Analysis.</p>
+        <div class="form-tags"><span>Eurocode</span><span>RSA</span><span>SAFE</span></div>
+        <a href="#contact" class="form-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="formation-card reveal">
+        <div class="form-num">03</div>
+        <div class="form-icon"><i class="fa-solid fa-sitemap"></i></div>
+        <h3>Management de Projet BTP</h3>
+        <p>Pilotage, planification, coûts et qualité — toutes les compétences pour gérer efficacement un chantier de A à Z.</p>
+        <div class="form-tags"><span>Pilotage</span><span>PMP</span><span>Planification</span></div>
+        <a href="#contact" class="form-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="formation-card reveal">
+        <div class="form-num">04</div>
+        <div class="form-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+        <h3>Métré &amp; Économie BTP</h3>
+        <p>Techniques de métré, rédaction des DPGF/BPU, estimation de coûts et gestion des marchés de travaux.</p>
+        <div class="form-tags"><span>Métré</span><span>Devis</span><span>Marchés</span></div>
+        <a href="#contact" class="form-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Contact &amp; Devis</div>
+      <h2 class="section-title">Démarrons <span class="gradient-text">Votre Projet</span></h2>
+      <p class="section-desc">Consultation gratuite — réponse sous 24h.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <img src="logo.svg" alt="B.E. Romdhane" class="contact-logo" />
+        <h3>Nos Coordonnées</h3>
+        <p>Disponibles du lundi au samedi, 8h–18h. Interventions sur toute la Tunisie et à l'international.</p>
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><small>Téléphone / WhatsApp</small><span>+216 96 300 558</span></div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><small>E-mail</small><span>h.romdhane@outlook.com</span></div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><small>Adresse</small><span>02 Mars, Akouda — Sousse, Tunisie</span></div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+          <div><small>Site web</small><span>www.bureau-romdhane.tn</span></div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/hamdi-romdhane-869787293/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/21696300558" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form id="whatsappForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Prénom *</label>
+              <input type="text" id="prenom" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label>Nom *</label>
+              <input type="text" id="nom" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Vous êtes *</label>
+              <select id="vousEtes" required>
+                <option value="" disabled selected>Sélectionner…</option>
+                <option>Maître d'ouvrage</option>
+                <option>Bureau d'étude</option>
+                <option>Architecte</option>
+                <option>Entrepreneur</option>
+                <option>Particulier</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Téléphone *</label>
+              <input type="tel" id="telephone" placeholder="+216 XX XXX XXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Adresse Email</label>
+            <input type="email" id="email" placeholder="votre@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Service souhaité *</label>
+            <select id="motif" required>
+              <option value="" disabled selected>Sélectionner un service…</option>
+              <option>Expertise technique</option>
+              <option>Études &amp; Conception</option>
+              <option>Pilotage de chantier</option>
+              <option>Métré &amp; Quantitatif</option>
+              <option>Coût Projet</option>
+              <option>Approbation &amp; Conformité</option>
+              <option>BIM &amp; Modélisation 3D</option>
+              <option>Formation professionnelle</option>
+              <option>Autre demande</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Description du projet *</label>
+            <textarea id="description" rows="5" placeholder="Décrivez votre projet, sa localisation, vos contraintes et vos attentes…" required></textarea>
+          </div>
+          <div class="form-group file-upload">
+            <label><i class="fa-solid fa-paperclip"></i> Joindre un document (optionnel)</label>
+            <input type="file" id="file" accept=".pdf,.dwg,.docx,.xlsx,.jpg,.png" />
+            <small>PDF, DWG, Word, Excel ou Image</small>
+          </div>
+          <button type="button" onclick="sendToWhatsApp()" class="btn btn-whatsapp w-100">
+            <i class="fa-brands fa-whatsapp"></i> Envoyer via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <img src="logo.svg" alt="B.E. Romdhane" class="footer-logo" />
+      <p>Groupe d'ingénieurs experts en génie civil industriel. Expertise, études, pilotage et formation — votre partenaire de confiance.</p>
+      <p class="founder">Fondateur : <strong>Hamdi Romdhane</strong> — Ingénieur Génie Civil</p>
+    </div>
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Expertise Technique</a></li>
+        <li><a href="#services">Études &amp; Conception</a></li>
+        <li><a href="#services">Pilotage de Chantier</a></li>
+        <li><a href="#services">Métré &amp; Quantitatif</a></li>
+        <li><a href="#services">Approbation</a></li>
+        <li><a href="#services">BIM &amp; 3D</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Formation</h4>
+      <ul>
+        <li><a href="#formation">AutoCAD</a></li>
+        <li><a href="#formation">Revit BIM</a></li>
+        <li><a href="#formation">Robot Structure</a></li>
+        <li><a href="#formation">Tekla Structures</a></li>
+        <li><a href="#formation">Eurocode</a></li>
+        <li><a href="#formation">Management BTP</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> +216 96 300 558</li>
+        <li><i class="fa-solid fa-envelope"></i> h.romdhane@outlook.com</li>
+        <li><i class="fa-solid fa-globe"></i> bureau-romdhane.tn</li>
+        <li><i class="fa-solid fa-location-dot"></i> Akouda, Sousse — Tunisie</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© 2026 Bureau d'Étude Romdhane. Tous droits réservés.</p>
+    <p>Conçu avec <i class="fa-solid fa-heart" style="color:var(--accent)"></i> par l'équipe B.E. Romdhane</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

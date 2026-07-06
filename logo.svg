@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <defs>
+    <filter id="yellowGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="blueGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background transparent -->
+  <!-- ICON -->
+  <g transform="translate(180,130)" filter="url(#yellowGlow)">
+    <path d="M40 420 L40 260 L210 130 L210 250 L140 300 L140 420 Z"
+          fill="none" stroke="#FFD100" stroke-width="28" stroke-linejoin="miter" stroke-linecap="square"/>
+    <path d="M250 420 L250 40 L430 180 L430 300 L330 220 L330 420 Z"
+          fill="none" stroke="#FFD100" stroke-width="28" stroke-linejoin="miter" stroke-linecap="square"/>
+    <path d="M200 420 L200 330 L260 280 L260 420 Z"
+          fill="none" stroke="#FFD100" stroke-width="24"/>
+    <path d="M390 420 L390 260 L540 380 L540 420 Z"
+          fill="none" stroke="#FFD100" stroke-width="28"/>
+    <path d="M455 420 L455 300 L505 340" fill="none" stroke="#FFD100" stroke-width="22"/>
+    <line x1="0" y1="455" x2="620" y2="455" stroke="#FFD100" stroke-width="8" opacity="0.5"/>
+  </g>
+  <!-- TEXT -->
+  <g transform="translate(720,310)">
+    <text x="0" y="0"
+          font-family="Montserrat, Arial, sans-serif"
+          font-size="96" font-weight="900"
+          fill="#FFFFFF"
+          filter="url(#blueGlow)">B.E. ROMDHANE</text>
+    <line x1="0" y1="70" x2="80" y2="70" stroke="#FFD100" stroke-width="8"/>
+    <text x="110" y="88"
+          font-family="Montserrat, Arial, sans-serif"
+          font-size="44" font-weight="600" letter-spacing="4"
+          fill="#FFD100"
+          filter="url(#yellowGlow)">INGÉNIEUR CONSEILLER</text>
+    <line x1="760" y1="70" x2="890" y2="70" stroke="#FFD100" stroke-width="8"/>
+  </g>
+</svg>

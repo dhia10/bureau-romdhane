@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130">
+
+  <!-- BUILDING ICON -->
+  <g transform="translate(10,8)">
+    <polyline points="8,105 8,52 30,30 50,30 50,105"
+      fill="none" stroke="#F5A623" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="14" y="65" width="9"  height="36" rx="4" fill="none" stroke="#F5A623" stroke-width="4"/>
+    <rect x="29" y="65" width="9"  height="36" rx="4" fill="none" stroke="#F5A623" stroke-width="4"/>
+
+    <polyline points="52,105 52,18 70,4 88,18 88,105"
+      fill="none" stroke="#F5A623" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="57" y="38" width="10" height="16" rx="3" fill="none" stroke="#F5A623" stroke-width="3.5"/>
+    <rect x="57" y="62" width="10" height="16" rx="3" fill="none" stroke="#F5A623" stroke-width="3.5"/>
+    <rect x="73" y="38" width="10" height="16" rx="3" fill="none" stroke="#F5A623" stroke-width="3.5"/>
+    <rect x="73" y="62" width="10" height="16" rx="3" fill="none" stroke="#F5A623" stroke-width="3.5"/>
+
+    <polyline points="90,105 90,30 110,30 130,52 130,105"
+      fill="none" stroke="#F5A623" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="96"  y="65" width="9"  height="36" rx="4" fill="none" stroke="#F5A623" stroke-width="4"/>
+    <rect x="111" y="65" width="9"  height="36" rx="4" fill="none" stroke="#F5A623" stroke-width="4"/>
+
+    <line x1="4" y1="108" x2="134" y2="108" stroke="#F5A623" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="4" y1="114" x2="134" y2="114" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- WORDMARK white -->
+  <text x="168" y="68"
+    font-family="'Outfit','Space Grotesk',Arial,sans-serif"
+    font-weight="900"
+    font-size="46"
+    fill="#ffffff"
+    letter-spacing="1">B.E. ROMDHANE</text>
+
+  <!-- Left dash -->
+  <line x1="168" y1="90" x2="210" y2="90" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+  <!-- Tagline -->
+  <text x="218" y="97"
+    font-family="'Outfit','Space Grotesk',Arial,sans-serif"
+    font-weight="600"
+    font-size="14"
+    fill="#F5A623"
+    letter-spacing="4">ING&#xC9;NIEUR CONSEILLER</text>
+  <!-- Right dash -->
+  <line x1="480" y1="90" x2="510" y2="90" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+</svg>
