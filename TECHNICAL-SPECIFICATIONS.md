@@ -1,4 +1,4 @@
-# 📋 Spécifications Techniques — Bureau Romdhane
+# Spécifications Techniques et Fonctionnelles — Bureau Romdhane
 
 | Référence Document | Date de Révision | Statut | Auteur |
 |---|---|---|---|
@@ -28,25 +28,25 @@ La plateforme remplit cinq fonctions majeures :
 L'architecture applicative est scindée en trois blocs découplés :
 
 ```plaintext
-┌────────────────────────────────────────────────────────────────────────┐
-│                              NAVIGATEUR                                │
-│                                                                        │
-│   ┌─────────────────────┐   ┌─────────────────┐   ┌────────────────┐   │
-│   │     index.html      │   │    index.css    │   │   script.js    │   │
-│   │                     │   │                 │   │                │   │
-│   │ • Structure HTML5   │   │ • Design System │   │ • Logique DOM  │   │
-│   │ • Sémantique & A11y │◄──┼─┤ • Layout CSS  │◄──┼─┤ • Événements   │   │
-│   │ • Conteneurs DOM    │   │ • Animations    │   │ • Particules   │   │
-│   │ • Balises SEO       │   │ • Media Queries │   │ • Validation   │   │
-│   └─────────────────────┘   └─────────────────┘   └────────────────┘   │
-└────────────────────────────────────▲───────────────────────────────────┘
-                                     │ Intègre
-                    ┌────────────────┴────────────────┐
-                    │      Ressources Statiques       │
-                    │ • /projects/ (Photographies)    │
-                    │ • /assets/ & logos              │
-                    │ • CDN: Google Fonts & FontAwes. │
-                    └─────────────────────────────────┘
+
+                              NAVIGATEUR                                
+                                                                        
+            
+        index.html             index.css          script.js       
+                                                                  
+    • Structure HTML5       • Design System     • Logique DOM     
+    • Sémantique & A11y  • Layout CSS   • Événements      
+    • Conteneurs DOM        • Animations        • Particules      
+    • Balises SEO           • Media Queries     • Validation      
+            
+
+                                      Intègre
+                    
+                          Ressources Statiques       
+                     • /projects/ (Photographies)    
+                     • /assets/ & logos              
+                     • CDN: Google Fonts & FontAwes. 
+                    
 ```
 
 ### 3.1. Structure Sémantique — `index.html`

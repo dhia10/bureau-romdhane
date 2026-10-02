@@ -1,4 +1,4 @@
-# 🛡️ Politique & Revue de Sécurité — Bureau Romdhane
+# Politique de Sécurité et Audit Technique — Bureau Romdhane
 
 | Document | Version | Niveau de Confidentialité | Auteur |
 |---|---|---|---|

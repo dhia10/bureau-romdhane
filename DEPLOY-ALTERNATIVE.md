@@ -1,4 +1,4 @@
-# 🚀 Alternatives de Déploiement Gratuit (Sans Azure) — Bureau Romdhane
+# Procédures d'Hébergement Statique Alternatif
 
 Puisque votre abonnement Azure a expiré, vous pouvez héberger votre site vitrine **100% gratuitement et de manière permanente** (sans expiration ni carte de crédit requise) sur d'autres plateformes modernes spécialisées dans le statique.
 
@@ -66,7 +66,7 @@ Dans l'onglet **Custom Domains** du projet Cloudflare Pages, ajoutez votre domai
 
 ---
 
-## 🌐 Configuration DNS typique chez votre Registrar
+## Configuration DNS typique chez votre Registrar
 
 Quelle que soit la plateforme choisie, connectez-vous à votre espace client chez le fournisseur de votre nom de domaine (Ex: OVH, ATI, etc.) et mettez à jour votre zone DNS :
 

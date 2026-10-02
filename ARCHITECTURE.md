@@ -1,4 +1,4 @@
-# 🏛️ Architecture Technique du Projet — Bureau Romdhane
+# Dossier d'Architecture Système — Bureau Romdhane
 
 | Document | Version | Statut | Auteur |
 |---|---|---|---|

@@ -1,4 +1,4 @@
-# 🔄 Cartographie des Flux Applicatifs & Données — Bureau Romdhane
+# Spécification des Flux Applicatifs et des Données — Bureau Romdhane
 
 | Document | Version | Domaine | Rédacteur |
 |---|---|---|---|
@@ -89,21 +89,21 @@ Ce flux s'exécute en tâche de fond dans la boucle d'animation du navigateur :
 
 ```plaintext
 [Cycle requestAnimationFrame (60 FPS)]
-  │
-  ├── 1. Effacement du canvas (ctx.clearRect)
-  │
-  ├── 2. Pour chaque particule i (0 à N) :
-  │       • Mise à jour position : x += vx, y += vy
-  │       • Détection rebond sur les bordures du viewport
-  │       • Dessin du point nodale
-  │
-  ├── 3. Pour chaque paire (i, j) :
-  │       • Calcul distance d = sqrt((x_j - x_i)² + (y_j - y_i)²)
-  │       • Si d < distance_seuil :
-  │           Calcul opacité = 1 - (d / distance_seuil)
-  │           Tracé de la ligne reliant i et j (simulation treillis structurel)
-  │
-  └── 4. Demande du frame suivant
+  
+   1. Effacement du canvas (ctx.clearRect)
+  
+   2. Pour chaque particule i (0 à N) :
+         • Mise à jour position : x += vx, y += vy
+         • Détection rebond sur les bordures du viewport
+         • Dessin du point nodale
+  
+   3. Pour chaque paire (i, j) :
+         • Calcul distance d = sqrt((x_j - x_i)² + (y_j - y_i)²)
+         • Si d < distance_seuil :
+             Calcul opacité = 1 - (d / distance_seuil)
+             Tracé de la ligne reliant i et j (simulation treillis structurel)
+  
+   4. Demande du frame suivant
 ```
 
 ---

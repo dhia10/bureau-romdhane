@@ -1,4 +1,4 @@
-# 📖 Guide Utilisateur & Procédures de Navigation
+# Guide d'Utilisation et Procédures Opérationnelles — Bureau Romdhane
 
 | Document | Version | Destinataires | Auteur |
 |---|---|---|---|
@@ -45,12 +45,12 @@ La section **Nos Réalisations** permet d'explorer les projets traités par le c
 
 ```plaintext
 [Tous]   [Structures Métalliques]   [Bâtiments & Résidentiel]   [Unités Industrielles]
-   │
-   ▼ (Filtrage instantané sans rechargement)
-┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-│  Projet 01   │  │  Projet 02   │  │  Projet 03   │   ◄── Carrousel défilant
-│  (Sfax)      │  │  (Sousse)    │  │  (Tunis)     │       • Glisser ou flèches
-└──────────────┘  └──────────────┘  └──────────────┘
+   
+    (Filtrage instantané sans rechargement)
+    
+  Projet 01       Projet 02       Projet 03       Carrousel défilant
+  (Sfax)          (Sousse)        (Tunis)            • Glisser ou flèches
+    
 ```
 
 1. **Filtrer par catégorie :** Cliquez sur l'un des boutons filtres situés au-dessus de la galerie pour n'afficher que les typologies souhaitées.

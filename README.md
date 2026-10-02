@@ -1,8 +1,5 @@
-# 🏗️ Bureau d'Étude Romdhane — Plateforme Web Vitrine & Devis
+# Bureau d'Étude Romdhane — Plateforme Web et Passerelle de Chiffrage
 
-[![Status](https://img.shields.io/badge/status-production--ready-brightgreen.svg)]()
-[![Stack](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-blue.svg)]()
-[![License](https://img.shields.io/badge/license-Proprietary-lightgrey.svg)]()
 
 > Site vitrine officiel et passerelle de devis interactive pour le **Bureau d'Étude Romdhane**, cabinet d'ingénierie et d'expertise en génie civil et structures basé en Tunisie.
 
@@ -54,27 +51,27 @@ Pour une description exhaustive de l'architecture, se référer au document [ARC
 
 ```plaintext
 bureau-romdhane/
-├── .github/                      # Workflows CI/CD (GitHub Actions)
-├── assets/                       # Fichiers graphiques et icônes
-├── projects/                     # Photographies des projets d'ingénierie (img-01.jpg à img-20.jpg)
-├── cv_dhia_romdhane_FR.html      # CV associé au profil concepteur (version FR)
-├── cv_dhia_romdhane_EN.html      # CV associé au profil concepteur (version EN)
-├── favicon.ico                   # Icône de navigateur
-├── logo.svg                      # Logo vectoriel du cabinet
-├── index.html                    # Point d'entrée principal (structure sémantique)
-├── index.css                     # Feuille de style globale et responsive
-├── script.js                     # Logique applicative, gestionnaires d'événements
-├── robots.txt                    # Directives d'indexation moteurs de recherche
-├── sitemap.xml                   # Plan du site pour le référencement naturel (SEO)
-│
-├── README.md                     # Présentation générale du projet (ce fichier)
-├── ARCHITECTURE.md               # Architecture globale et choix de conception
-├── TECHNICAL-SPECIFICATIONS.md   # Spécifications fonctionnelles et techniques détaillées
-├── APPLICATION-FLOWS.md          # Cartographie des flux applicatifs et de données
-├── USER-GUIDE.md                 # Guide d'utilisation et procédures de navigation
-├── SECURITY.md                   # Politique de sécurité, contrôles et limites
-├── DEPLOY-AZURE.md               # Procédure de déploiement Azure Static Web Apps
-└── DEPLOY-ALTERNATIVE.md         # Procédures alternatives (Netlify, Vercel, Cloudflare)
+ .github/                      # Workflows CI/CD (GitHub Actions)
+ assets/                       # Fichiers graphiques et icônes
+ projects/                     # Photographies des projets d'ingénierie (img-01.jpg à img-20.jpg)
+ cv_dhia_romdhane_FR.html      # CV associé au profil concepteur (version FR)
+ cv_dhia_romdhane_EN.html      # CV associé au profil concepteur (version EN)
+ favicon.ico                   # Icône de navigateur
+ logo.svg                      # Logo vectoriel du cabinet
+ index.html                    # Point d'entrée principal (structure sémantique)
+ index.css                     # Feuille de style globale et responsive
+ script.js                     # Logique applicative, gestionnaires d'événements
+ robots.txt                    # Directives d'indexation moteurs de recherche
+ sitemap.xml                   # Plan du site pour le référencement naturel (SEO)
+
+ README.md                     # Présentation générale du projet (ce fichier)
+ ARCHITECTURE.md               # Architecture globale et choix de conception
+ TECHNICAL-SPECIFICATIONS.md   # Spécifications fonctionnelles et techniques détaillées
+ APPLICATION-FLOWS.md          # Cartographie des flux applicatifs et de données
+ USER-GUIDE.md                 # Guide d'utilisation et procédures de navigation
+ SECURITY.md                   # Politique de sécurité, contrôles et limites
+ DEPLOY-AZURE.md               # Procédure de déploiement Azure Static Web Apps
+ DEPLOY-ALTERNATIVE.md         # Procédures alternatives (Netlify, Vercel, Cloudflare)
 ```
 
 ---

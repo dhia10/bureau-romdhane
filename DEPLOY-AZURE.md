@@ -1,4 +1,4 @@
-# 🚀 Déploiement Azure — Bureau Romdhane
+# Procédure de Déploiement — Microsoft Azure Static Web Apps
 ## Domaine cible : `bureau-romdhane.tn`
 
 ---
@@ -71,7 +71,7 @@ az staticwebapp show `
 
 ---
 
-## 🌐 Configurer le domaine bureau-romdhane.tn
+## Configurer le domaine bureau-romdhane.tn
 
 ### Étape 1 — Ajouter ces enregistrements DNS chez votre registrar
 
@@ -115,7 +115,7 @@ Le SSL/HTTPS est **automatique et gratuit** via Azure.
 
 ---
 
-## 📋 Résumé des coûts
+## Résumé des coûts
 
 | Service              | Coût         |
 |----------------------|--------------|
