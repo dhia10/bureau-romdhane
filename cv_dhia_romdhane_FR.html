@@ -239,11 +239,11 @@
   <div class="skills-container">
     <div class="skill-line">
       <span class="skill-label">IA & Systèmes Agentiques (GenAI) :</span>
-      <span class="skill-content"><strong>RAG (Retrieval-Augmented Generation)</strong>, Agents LLM, <strong>ChromaDB</strong>, Ollama, LangChain, Embeddings sémantiques, Prompt Engineering, Vision par ordinateur (OpenCV).</span>
+      <span class="skill-content"><strong>RAG (Retrieval-Augmented Generation)</strong>, Agents LLM, <strong>ChromaDB</strong>, Ollama, LangChain, <strong>Guardrails LLM / Sécurisation des prompts</strong>, Embeddings sémantiques, Vision par ordinateur (OpenCV).</span>
     </div>
     <div class="skill-line">
       <span class="skill-label">Data Engineering & Ingestion :</span>
-      <span class="skill-content"><strong>SQL avancé (PostgreSQL)</strong>, MongoDB, SQLite, modélisation relationnelle & NoSQL, <strong>Web Scraping & Ingestion temps réel</strong> (Playwright, BeautifulSoup, WebSocket/Streaming), Qualité de données (déduplication, audit trail).</span>
+      <span class="skill-content"><strong>SQL avancé (PostgreSQL)</strong>, MongoDB, modélisation relationnelle & NoSQL, <strong>Web Scraping & Ingestion temps réel</strong> (Playwright, BeautifulSoup, Streaming), <strong>Gouvernance & Qualité de données</strong> (audit trail, intégrité des flux, conformité RGPD / protection des données).</span>
     </div>
     <div class="skill-line">
       <span class="skill-label">Automatisation, Software & BI :</span>
@@ -270,7 +270,7 @@
       <span class="item-tech">Python • FastAPI • Scraping Temps Réel • RAG / LLM • n8n • PostgreSQL</span>
     </div>
     <ul class="bullets">
-      <li><strong>Architecture d'ingestion & Scraping temps réel (TikTok Live) :</strong> Développement d'un moteur d'ingestion et de parsing continu des flux de commentaires en direct ; extraction instantanée d'entités (numéros de téléphone, intention d'achat) et persistance structurée dans <strong>PostgreSQL</strong> via <strong>FastAPI</strong>.</li>
+      <li><strong>Architecture d'ingestion & Scraping temps réel (TikTok Live) :</strong> Développement d'un moteur d'ingestion et de parsing continu des flux de commentaires en direct ; extraction instantanée d'entités, assainissement des entrées (<em>input validation</em>) et stockage sécurisé des données de contact dans <strong>PostgreSQL</strong> via <strong>FastAPI</strong>.</li>
       <li><strong>Agent d'assistance & Qualification par RAG :</strong> Intégration d'un agent LLM avec recherche vectorielle sur le catalogue produit/FAQ pour qualifier automatiquement les leads et générer des réponses contextualisées aux questions des prospects.</li>
       <li><strong>Automatisation de conversion & Impact commercial mesuré (n8n & CRM) :</strong> Orchestration de workflows <strong>n8n</strong> connectés aux API Facebook/Messagerie pour la relance instantanée et la finalisation d'achats ; passage de 300 à 700 leads/clients traités par jour à volume d'audience égal (<strong>+133% de taux de captation</strong>).</li>
     </ul>
@@ -307,7 +307,7 @@
     </div>
     <ul class="bullets">
       <li><strong>Crawling multi-sources & Centralisation de données :</strong> Conception d'un pipeline de web crawling/scraping distribué pour collecter, nettoyer et consolider les annonces et données du marché immobilier tunisien issues de multiples portails vers une architecture hybride (<strong>PostgreSQL</strong> & <strong>MongoDB</strong>).</li>
-      <li><strong>Agent RAG Juridique & Conformité :</strong> Indexation vectorielle (<strong>ChromaDB</strong>, Ollama llama3.2) des baux, contrats et réglementations légales pour l'assistance à la conformité contractuelle, réduisant drastiquement le risque d'hallucinations (<strong>&gt;90%</strong>).</li>
+      <li><strong>Agent RAG Juridique & Conformité :</strong> Indexation vectorielle (<strong>ChromaDB</strong>, Ollama llama3.2), mise en place de guardrails documentaires et prompt grounding réduisant les hallucinations de plus de <strong>90%</strong> et garantissant la traçabilité des sources légales.</li>
       <li><strong>Scoring spatial & Tableaux de bord décisionnels :</strong> Génération d'indicateurs de rentabilité (ROI estimé, attractivité par zone géographique avec Mapbox) et restitution analytique sur <strong>Power BI</strong>.</li>
     </ul>
   </div>
