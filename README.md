@@ -54,8 +54,6 @@ bureau-romdhane/
  .github/                      # Workflows CI/CD (GitHub Actions)
  assets/                       # Fichiers graphiques et icônes
  projects/                     # Photographies des projets d'ingénierie (img-01.jpg à img-20.jpg)
- cv_dhia_romdhane_FR.html      # CV associé au profil concepteur (version FR)
- cv_dhia_romdhane_EN.html      # CV associé au profil concepteur (version EN)
  favicon.ico                   # Icône de navigateur
  logo.svg                      # Logo vectoriel du cabinet
  index.html                    # Point d'entrée principal (structure sémantique)

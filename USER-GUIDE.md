@@ -64,19 +64,9 @@ La section **Nos Réalisations** permet d'explorer les projets traités par le c
 
 ---
 
-## 5. Téléchargement & Consultation des Documents
+## 5. Demande de Devis & Contact Direct
 
-Le site met à disposition des documents institutionnels et professionnels :
-- **Curriculum Vitae du Concepteur / Ingénieur :** 
-  - Deux versions sont consultables directement en ligne : Version Française (`cv_dhia_romdhane_FR.html`) et Version Anglaise (`cv_dhia_romdhane_EN.html`).
-  - Des versions PDF téléchargeables sont associées pour archivage.
-- **Visualisation :** Un clic sur le lien ouvre le document dans un nouvel onglet sans quitter la navigation principale.
-
----
-
-## 6. Demande de Devis & Contact Direct
-
-### 6.1. Formulaire de Devis Express (WhatsApp)
+### 5.1. Formulaire de Devis Express (WhatsApp)
 Pour obtenir une pré-étude ou un chiffrage rapide :
 1. Descendez jusqu'à la section **Contact / Demandez un Devis**.
 2. Renseignez les champs requis :
@@ -90,7 +80,7 @@ Pour obtenir une pré-étude ou un chiffrage rapide :
    - Une notification verte ("Redirection en cours…") apparaît.
    - L'application WhatsApp s'ouvre avec votre message pré-formaté et prêt à l'envoi vers le responsable d'études.
 
-### 6.2. Canaux Alternatifs Directs
+### 5.2. Canaux Alternatifs Directs
 Si vous préférez un contact classique :
 - **Téléphone direct :** Cliquez sur le numéro affiché pour lancer un appel immédiat.
 - **Messagerie Email :** Cliquez sur l'adresse email pour ouvrir votre client de messagerie habituel.
@@ -98,7 +88,7 @@ Si vous préférez un contact classique :
 
 ---
 
-## 7. FAQ & Résolution de Problèmes Courants
+## 6. FAQ & Résolution de Problèmes Courants
 
 | Problème rencontré | Cause probable | Solution recommandée |
 |---|---|---|
